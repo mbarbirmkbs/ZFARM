@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/llRow_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:divider="@android:drawable/divider_horizontal_dark"
+    android:orientation="horizontal">
+    <!--android:background="@drawable/border">-->
+    <!--android:layout_height="match_parent"-->
+
+    <RelativeLayout
+        android:layout_width="72dp"
+        android:layout_height="88dp"
+        android:orientation="vertical"
+        >
+
+        <ImageView
+            android:id="@+id/ivIcon"
+            android:layout_width="72dp"
+            android:layout_height="88dp"
+            android:paddingLeft="6dp"
+            android:paddingTop="6dp"
+            android:paddingRight="12dp"
+            android:paddingBottom="6dp"
+            app:srcCompat="@drawable/ic_folder_open_24px" />
+<!--        android:tint="#1A237E"-->
+        
+    </RelativeLayout >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="16dp"
+        >
+
+        <TextView
+            android:id="@+id/tvTipUnosa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            android:textColor="#1A237E"
+            android:textAppearance="@android:style/TextAppearance.Material.Headline"
+            tools:text="Tip unosa" />
+
+        <TextView
+            android:id="@+id/tvInfoLine1"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            tools:text="Linija 1" />
+
+        <TextView
+            android:id="@+id/tvInfoLine2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="Linija 2" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"/>
+
+    </LinearLayout>
+
+</LinearLayout>

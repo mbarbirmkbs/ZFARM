@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">ZFARM</string>
+    <string name="gwu">GWANDROID</string>
+    <string name="gwp">a7r8495864s2g5</string>
+    <string name="kategorija">%1$s (%2$s)</string>
+    //Krave (K1)
+    <string name="GrloInfo1">%1$s (%2$s)</string>
+    //Krave (K1)
+    <string name="GrloInfo2">%1$s %2$s (%3$d dana)</string>
+    <string name="ime_grla">Ime grla:</string>
+    <string name="kategorija2">Kategorija:</string>
+    <string name="ib_grla">IB Grla:</string>
+    <string name="laktacija">Laktacija:</string>
+    <string name="rodjeno">Rođeno: </string>
+    <string name="searchGrlib">Pronađi grlo po IB</string>
+    <string name="chartTitle">Mleko u poslednjih 7 dana</string>
+    <string name="menu_cow">Krave</string>
+    <string name="menu_bull">Bikovi</string>
+    <string name="menu_calf">Telad</string>
+    <string name="action_settings">Podešavanja</string>
+    <string name="TipUnosaHint">Tip unosa</string>
+    <string name="uStaju">Odaberi staju/boks</string>
+    <string name="razlogPremestaja">Razlog premeštaja</string>
+    <string name="test">text</string>
+    <string name="test2">test</string>
+    <string name="ib_grla_trazi">Traži po IB grla...</string>
+    //Krave (K1)
+</resources>

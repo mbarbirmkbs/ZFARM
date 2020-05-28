@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.CowDetailsActivity"
+    android:background="@drawable/main_header_selector">
+
+    <RelativeLayout
+        android:id="@+id/rlTable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top"
+        android:paddingBottom="6dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableLayout
+            android:id="@+id/tlDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp"
+            android:stretchColumns="1">
+
+            <!--IB Grla-->
+            <TableRow
+                android:id="@+id/trIbGrla"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+<!--                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/ib_grla"
+                    android:textColor="#1A237E"
+                    android:textSize="24sp" />-->
+
+                <ImageView
+                    android:id="@+id/ivIcon"
+                    android:layout_column="0"
+                    android:layout_width="72dp"
+                    android:layout_height="72dp"
+                    android:layout_alignParentTop="true"
+                    app:srcCompat="@drawable/ic_folder_open_24px" />
+
+                <TextView
+                    android:id="@+id/tvGrlib"
+                    android:layout_height="match_parent"
+                    android:layout_column="1"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center_vertical"
+                    android:padding="5dp"
+                    android:textColor="#1A237E"
+                    android:textSize="36sp"/>
+
+            </TableRow>
+
+            <!--Ime grla-->
+            <TableRow
+                android:id="@+id/trGrlime"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/ime_grla"
+                    android:textColor="#1A237E"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tvGrlime"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_marginLeft="10dp"
+                    android:padding="5dp"
+                    android:textColor="#000" />
+
+            </TableRow>
+
+            <!--Kategorija grla-->
+            <TableRow
+                android:id="@+id/trIbKateg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/kategorija2"
+                    android:textColor="#1A237E"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tvKnjgk"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_marginLeft="10dp"
+                    android:padding="5dp"
+                    android:textColor="#000" />
+
+            </TableRow>
+
+            <!--Repro status grla-->
+            <TableRow
+                android:id="@+id/trRepro"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_marginLeft="10dp"
+                    android:text="Status:"
+                    android:textColor="#1A237E"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tvRepro"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_marginLeft="10dp"
+                    android:padding="5dp"
+                    android:textColor="#000" />
+
+            </TableRow>
+
+            <!--Laktacija-->
+            <TableRow
+                android:id="@+id/trIbFazal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/laktacija"
+                    android:textColor="#1A237E"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tvFazal"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_marginLeft="10dp"
+                    android:padding="5dp"
+                    android:textColor="#000" />
+
+            </TableRow>
+
+            <!--Datum Rodjenja-->
+            <TableRow
+                android:id="@+id/trDatRodj"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/rodjeno"
+                    android:textColor="#1A237E"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tvDatRodj"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_marginLeft="10dp"
+                    android:padding="5dp"
+                    android:textColor="#000" />
+
+            </TableRow>
+
+        </TableLayout>
+
+        <TextView
+            android:id="@+id/tvChartTitle"
+            android:layout_below="@id/tlDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dp"
+            android:text="@string/chartTitle"
+            android:textAlignment="center"
+            android:textColor="#1A237E"
+            android:textSize="16sp"
+            android:visibility="invisible" />
+
+        <lecho.lib.hellocharts.view.ColumnChartView
+            android:id="@+id/ccvChart"
+            android:layout_below="@id/tvChartTitle"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:layout_height="250dp"
+            android:visibility="invisible"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:orientation="horizontal"
+            >
+
+            <Button
+                android:id="@+id/buttonUnosi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                style="@style/Widget.MaterialComponents.Button"
+                android:drawableLeft="@android:drawable/ic_menu_agenda"
+                android:onClick="onClickBtnUnosi"
+                android:text="Unosi"
+                android:textSize="16sp"
+                android:textColor="#FFE0F7FA"
+                android:layout_margin="2dp"
+                />
+
+            <Button
+                android:id="@+id/buttonNoviUnos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:enabled="true"
+                style="@style/Widget.MaterialComponents.Button"
+                android:drawableLeft="@android:drawable/ic_menu_add"
+                android:onClick="onClickBtnNoviUnos"
+                android:text="Novi unos"
+                android:textSize="16sp"
+                android:textColor="#FFE0F7FA"
+                android:layout_margin="2dp"
+                />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBar"
+        android:gravity="top"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

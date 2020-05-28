@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.SearchGrlib"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:background="@drawable/main_header_selector">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilGrlib"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/ib_grla_trazi"
+        android:layout_marginTop="6dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <AutoCompleteTextView
+            android:id="@+id/filled_exposed_dropdownGrlib"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:clickable="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/buttonSnimiUnos"
+        app:layout_constraintTop_toBottomOf="@id/tilGrlib"
+        app:layout_constraintLeft_toLeftOf="@id/tilGrlib"
+        app:layout_constraintRight_toRightOf="@id/tilGrlib"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:enabled="true"
+        style="@style/Widget.MaterialComponents.Button"
+        android:drawable="@android:drawable/ic_menu_add"
+        android:onClick="onClickBtnOpen"
+        android:text="Otvori karton"
+        android:textSize="16sp"
+        android:textColor="#FFE0F7FA"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

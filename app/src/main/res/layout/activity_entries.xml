@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="6dp"
+    android:paddingRight="12dp"
+    android:background="@drawable/main_header_selector">
+
+<!--        <TextView
+            android:id="@+id/tvGrlib"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_column="1"
+            android:padding="5dp"
+            android:text = "IB Grla:"
+            android:textColor="#000"
+            android:textSize="20sp"/>-->
+
+        <RelativeLayout
+            android:id="@+id/rlGrlib"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            >
+
+                <ImageView
+                    android:id="@+id/ivIcon"
+                    android:layout_width="72dp"
+                    android:layout_height="72dp"
+                    android:layout_alignParentTop="true"
+                    app:srcCompat="@drawable/ic_folder_open_24px" />
+
+                <TextView
+                    android:id="@+id/tvGrlib"
+                    android:layout_width="wrap_content"
+                    android:layout_height="72dp"
+                    android:gravity="center_vertical"
+                    android:text="TextView"
+                    android:layout_marginLeft="10dp"
+                    android:padding="5dp"
+                    android:layout_alignTop="@+id/ivIcon"
+                    android:layout_toRightOf="@+id/ivIcon"
+                    android:textColor="#1A237E"
+                    android:textSize="36sp" />
+
+        </RelativeLayout >
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvEntries"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/rlGrlib"
+            app:layout_constraintTop_toBottomOf="@id/rlGrlib">
+        </androidx.recyclerview.widget.RecyclerView>
+        <!--app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">-->
+
+        <ProgressBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/progressBar"
+            android:paddingBottom="40dp"
+            android:gravity="top"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

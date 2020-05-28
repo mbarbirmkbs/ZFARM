@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config xmlns:android="http://schemas.android.com/apk/res/android">
+    <domain-config cleartextTrafficPermitted="true">
+<!--        <domain includeSubdomains="true">http://mkitsap.mk-group.org:8055/sap/opu/odata/sap/ZFARM_TEST_01_SRV/</domain>-->
+        <domain includeSubdomains="true">mkitsap.mk-group.org</domain>
+    </domain-config>
+<!--    <base-config cleartextTrafficPermitted="true">
+        <trust-anchors>
+            <certificates src="system" />
+        </trust-anchors>
+    </base-config>-->
+</network-security-config>
